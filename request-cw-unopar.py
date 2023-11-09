@@ -47,3 +47,5 @@ navegador.find_element_by_xpath('//*[@id="loginForm"]/button')
 #navegador.find_element_by_xpath('//*[@id="playbarBkGrnd"]/canvas[2]').click()
 
 time=3000
+
+navegador.close()
