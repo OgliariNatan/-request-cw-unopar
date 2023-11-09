@@ -20,3 +20,5 @@ unopar_cw = requests.get('https://www.colaboraread.com.br/integracaoAlgetec/inde
 
 print(unopar_cw)
 
+#dfdg
+
