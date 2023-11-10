@@ -11,8 +11,10 @@
 import requests
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 #servico = Service(ChromeDriverManager().install())
@@ -30,21 +32,21 @@ navegador = webdriver.Chrome()
 
 #navegador = webdriver.Chrome("chromedriver")
 navegador.get('https://www.colaboraread.com.br/login/auth')
-username = '0hjjjm4960'
-password = 'yfjg'
+username = 'xxxxx'
+password = 'xxxxxx'
+#Espera carregar o site
+navegador.implicitly_wait(20)
 navegador.find_element('id', 'username').send_keys(username)
-
+navegador.implicitly_wait(10)
 navegador.find_element('id', 'password').send_keys(password)
-time=3000
-#navegador.find_element('name', 'Entrar').click()
-navegador.find_element_by_xpath('//*[@id="loginForm"]/button')
-#Falta o clique no botão entrar css
-#navegador.find_element_by_css_selector('btnbtn-primarybtn-lgbtn-blockmb-10')
+navegador.implicitly_wait(10)
+#clica no botão de entrar
+al = WebDriverWait(navegador, 30).until(EC.presence_of_element_located((By.XPATH, '//*[@id="loginForm"]/button')))
+al.click()
+#Entra na trilha e carreira
+al = WebDriverWait(navegador, 30).until(EC.presence_of_element_located((By.XPATH, '//*[@id="navbar-content-aluno-cursos"]/div/div[2]/div/div[2]/div[2]/button')))
+al.click()
 
 
-#navegador.find_element_by_xpath('//*[@id="username"]').click()
-#navegador.find_element_by_xpath('//*[@id="playbarBkGrnd"]/canvas[2]').click()
-
-time=3000
-
+navegador.quit()
 navegador.close()
