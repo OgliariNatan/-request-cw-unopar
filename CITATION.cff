@@ -6,9 +6,10 @@ authors:
   given-names: "Ogliari"
   orcid: "https://orcid.org/0009-0000-2586-248"
 
+license: MIT
 title: "-request-cw-unopar"
 version: 0.1
 
 date-released: 2023-10-18
 url: "https://github.com/OgliariNatan/-request-cw-unopar"
-license: MIT
+
