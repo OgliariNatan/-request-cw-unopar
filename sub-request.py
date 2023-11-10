@@ -30,4 +30,4 @@ al.click()
 
 
 unopar_cw.quit()
-unopar_cw.close()
+#unopar_cw.close()
