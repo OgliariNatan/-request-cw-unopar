@@ -19,6 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 #navegador = webdriver.Chrome(service=servico)
 unopar_cw = webdriver.Chrome()
 url='https://www.colaboraread.com.br/integracaoAlgetec/index?usuarioEmail=EADPR29%40GMAIL.COM&usuarioNome=NATAN+OGLIARI&disciplinaDescricao=&atividadeId=3684159&atividadeDescricao=CW1+-+TECNOLOGIAS+DE+INFORMA%C3%87%C3%83O+APLICADAS+AO+DIREITO&ofertaDisciplinaId=12293439&codigoMaterial=0&fornecedor=2&urlOrigem=http%3A%2F%2Fcm-kls-content.s3.amazonaws.com%2F201802%2FINTERATIVAS_2_0%2FTECNOLOGIAS_DE_INFORMACAO_APLICADAS_AO_DIREITO%2FU1%2FS1%2Findex.html&isAluno=true'
+unopar_cw.get(url)
 unopar_cw = requests.get(url)
 unopar_cw.implicitly_wait(20)
 print(unopar_cw)
