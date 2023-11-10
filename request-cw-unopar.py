@@ -9,7 +9,6 @@
 #####	PROJETO:			https://github.com/OgliariNatan/-request-cw-unopar
 
 import requests
-from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
