@@ -25,3 +25,4 @@ Requisições dos conteúdos web da unopar.
  > Uma etapa por vez.
 
 <!-- isso é um comentário -->
+[Documentação requests](https://3.python-requests.org/user/advanced/)
